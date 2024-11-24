@@ -1,0 +1,138 @@
+/* Estilo general */
+* {
+    margin: 0; /* Elimina los márgenes externos por defecto */
+    padding: 0; /* Elimina los rellenos internos por defecto */
+    box-sizing: border-box; /* Asegura que los márgenes y bordes no afecten el tamaño total del elemento */
+    font-family: Arial, sans-serif; /* Establece la fuente base de la página */
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina relleno */
+}
+
+/* Encabezado de la página */
+header {
+    background-color: #ebed80; /* Color de fondo del encabezado */
+    color: rgb(17, 0, 85); /* Color del texto del encabezado */
+    padding: 10px 0; /* Relleno interno */
+    text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+/* Estilos de los elementos de la lista en el menú */
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Margen entre los elementos */
+}
+
+/* Estilos de los enlaces en el menú */
+nav ul li a {
+    color: rgb(29, 1, 105); /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos del contenido principal de la página */
+main {
+    padding: 20px; /* Relleno interno */
+}
+
+/* Sección de contenido */
+section {
+    margin-bottom: 20px; /* Margen inferior */
+    padding: 15px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde de la sección */
+}
+
+/* Pie de página de la página */
+footer {
+    text-align: center; /* Alineación centrada del texto */
+    padding: 10px 0; /* Relleno interno */
+    background-color: #f1f1f1; /* Color de fondo */
+}
+
+/* Estilo para la disposición de las columnas */
+.columnas {
+    display: flex; /* Usa Flexbox para las columnas */
+    justify-content: space-between; /* Distribuye el espacio entre las columnas */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilo para cada columna */
+.columna {
+    flex: 1; /* Cada columna ocupa el mismo espacio disponible */
+    margin: 0 10px; /* Margen entre las columnas */
+    padding: 15px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde de la columna */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las columnas */
+}
+
+/* Estilos del catálogo de productos */
+.catalogo {
+    display: grid; /* Usa Grid para organizar los productos */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Definición de columnas automáticas */
+    gap: 20px; /* Espacio entre los productos */
+}
+
+/* Estilos para cada camiseta en el catálogo */
+.camiseta {
+    border: 1px solid #ccc; /* Borde alrededor de la camiseta */
+    padding: 15px; /* Relleno interno */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra alrededor de cada camiseta */
+}
+
+/* Estilos para las imágenes de las camisetas */
+.camiseta img {
+    width: 100%; /* Ancho de la imagen al 100% */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilo para los títulos de las camisetas */
+.camiseta h3 {
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para la descripción de las camisetas */
+.camiseta p {
+    color: #555; /* Color gris para el texto */
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #29aaff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Elimina el borde predeterminado */
+    cursor: pointer; /* Cambia el cursor a mano cuando pasa por encima */
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block; /* Muestra el botón en línea */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos cuando el ratón pasa sobre el botón */
+.boton:hover {
+    background-color: #007bb5; /* Cambia el color de fondo del botón */
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Organiza las columnas en forma vertical */
+    }
+
+    .columna {
+        margin: 10px 0; /* Margen entre las columnas */
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr 1fr; /* Cambia el diseño de las columnas para pantallas más pequeñas */
+    }
+}
